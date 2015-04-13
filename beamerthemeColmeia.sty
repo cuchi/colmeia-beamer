@@ -1,0 +1,33 @@
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\useoutertheme{miniframes}
+\useinnertheme{circles}
+\usecolortheme{whale}
+\usecolortheme{orchid}
+
+\definecolor{beamer@darkgray}{rgb}{0.39,0.39,0.39}
+
+\setbeamercolor{structure}{fg=beamer@darkgray}
+\setbeamercolor{titlelike}{parent=structure}
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{item}{fg=black}
+
+
+\setbeamertemplate{footline} {
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=0.9\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+            \usebeamerfont{title in head/foot}COLMEIA - Grupo de Extensão em Software e Hardware Livre - \insertshortinstitute
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=0.1\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+            \usebeamerfont{date in head/foot}\insertframenumber{}
+    \end{beamercolorbox}}%
+    \vskip0pt
+}
+
+\mode
+<all>
