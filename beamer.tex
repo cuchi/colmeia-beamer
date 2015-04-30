@@ -1,9 +1,13 @@
 % \documentclass[aspectratio=169]{beamer}
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
 \usepackage[document]{ragged2e}
+\usepackage{listingsutf8}
 \usepackage{tiks}
+\usepackage[T1]{fontenc}
 \usetheme{Colmeia}
+\include{lstset}
 
 % Título
 \title{\textbf{Template padrão para Aprensentações em \LaTeX}}
@@ -33,6 +37,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+\defverbatim[colored]\codigoexemplo{
+    \lstinputlisting{exemplo.c}
+}
+
 % Remove os ícones de navegação:
 \beamertemplatenavigationsymbolsempty
 
